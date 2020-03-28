@@ -39,8 +39,7 @@ def results(candidates, percents):
     print_candidates = ""
     for candidate, votes in candidate.items():
         print_candidates = print_candidates + f"{candidate}: {votes} votes({(votes/total_votes)*100}%)\n"
-    results = f"{print_winner}/n___________________________________/n
-{print_candidates}"
+    results = f"{print_winner}/n___________________________________/n{print_candidates}"
     return results
 
 vote_csv = read_file("/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyPoll/Resources/election_data.csv")
