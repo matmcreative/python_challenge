@@ -1,7 +1,6 @@
 import os
 import csv
 
-# Create function to analyze file
 def read_file(path):
     with open(path) as f:
         csvreader = csv.reader(f, delimiter = ',')
@@ -14,7 +13,7 @@ def read_file(path):
 def vote_count(data):
     candidates = {}
     total_votes = 0
-    for row in data[0:10]:
+    for row in data:
         candidate = row[2]
         if candidate in candidates:
             candidates[candidate] +=1
@@ -22,22 +21,16 @@ def vote_count(data):
             candidates[candidate] =1
     return [candidates, total_votes]
 
-# def vote_percents(candidates, total_votes):
-#     percents ={}
-#     for candidate, votes in candidate.items():
-#         percents[candidate] = int(round((votes/total_votes) *100, 0))
-#     return percents
-
-def results(candidates, percents):
+def results(candidates, total_votes):
     winning_votes = 0
     winner = ""
-    for candidate, votes in candidates.item():
+    for candidate, votes in candidates.items():
         if votes > winning_votes:
             winner = candidate
             winning_votes = votes
-    print_winner = f"The winner is {winner}!"
+    print_winner = f"The winner is {winner} with {winning_votes} votes!"
     print_candidates = ""
-    for candidate, votes in candidate.items():
+    for candidate, votes in candidates.items():
         print_candidates = print_candidates + f"{candidate}: {votes} votes({(votes/total_votes)*100}%)\n"
     results = f"{print_winner}/n___________________________________/n{print_candidates}"
     return results
@@ -45,7 +38,7 @@ def results(candidates, percents):
 vote_csv = read_file("/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyPoll/Resources/election_data.csv")
 candidates, total_votes = vote_count(vote_csv)
 results = results(candidates, total_votes)
-print (results)
+print (candidates)
 
 
     
