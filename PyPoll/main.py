@@ -35,10 +35,17 @@ def results(candidates, total_votes):
     results = f"{print_winner}/n___________________________________/n{print_candidates}"
     return results
 
-vote_csv = read_file("/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyPoll/Resources/election_data.csv")
-candidates, total_votes = vote_count(vote_csv)
-results = results(candidates, total_votes)
-print (candidates)
+def final_results(path):
+        vote_csv = read_file("/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyPoll/Resources/election_data.csv")
+        candidates, total_votes = vote_count(vote_csv)
+        results = results(candidates, total_votes)
+        print(results)
+        save_results = input("Do you want to save the file? (y/n)\n")
+        if save_results =="y":
+                with open("output_file.txt, "w") as doc:
+                          doc.write(results)
+final_results("eletion_data.csv")
+Collapse
 
 
     
