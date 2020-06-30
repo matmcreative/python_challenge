@@ -5,19 +5,19 @@
 
 ## Table of Contents
 * [Technologies](#Technologies)
-* [PyBank Objective](#PyBank Objective)
-* [PyBank Process](#PyBank Process)
-* [PyPoll Objective](#PyBank Objective)
-* [PyPoll Process](#PyBank Process)
+* [PyBank Objective](#Objective1)
+* [PyBank Process](#Process1)
+* [PyPoll Objective](#Objective2)
+* [PyPoll Process](#Process2)
 * [Troubleshooting](#Troubleshooting)
 
 # Technologies
 * Python
 
-# PyBank Objective
+# Objective1 | PyBank
 Create a Python script for analyzing the financial records of the company. 
 
-# PyBank Process
+# Process1 | PyBank
 
 * Create a Python script that analyzes the records to calculate each of the following:
 
@@ -33,13 +33,13 @@ Create a Python script for analyzing the financial records of the company.
 
 * Print the analysis to the terminal and export a text file with the results.
 
-# PyPoll Objective
+# Objective2 | PyPoll
 
 ![Vote-Counting](Images/Vote_counting.png)
 
 * Modernize small-town vote-counting process. 
 
-# PyPoll Process
+# Process2 | PyPoll
 
 * Create a Python script that analyzes the votes and calculates each of the following:
 
