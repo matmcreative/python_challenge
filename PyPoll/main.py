@@ -36,7 +36,7 @@ def results(candidates, total_votes):
     return results
 
 def final_results(path):
-        vote_csv = read_file("/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyPoll/Resources/election_data.csv")
+        vote_csv = read_file("Resources/election_data.csv")
         candidates, total_votes = vote_count(vote_csv)
         results = results(candidates, total_votes)
         print(results)
