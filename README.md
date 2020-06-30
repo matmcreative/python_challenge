@@ -2,13 +2,22 @@
 
 ![Revenue](Images/revenue-per-lead.png)
 
-# PyBank Objective
-Creatw a Python script for analyzing the financial records of the company. Export a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
+
+## Table of Contents
+* [Technologies](#Technologies)
+* [PyBank Objective](#PyBank Objective)
+* [PyBank Process](#PyBank Process)
+* [PyPoll Objective](#PyBank Objective)
+* [PyPoll Process](#PyBank Process)
+* [Troubleshooting](#Troubleshooting)
 
 # Technologies
 * Python
 
-# Process
+# PyBank Objective
+Create a Python script for analyzing the financial records of the company. 
+
+# PyBank Process
 
 * Create a Python script that analyzes the records to calculate each of the following:
 
@@ -30,7 +39,7 @@ Creatw a Python script for analyzing the financial records of the company. Expor
 
 * Modernize small-town vote-counting process. 
 
-# Process
+# PyPoll Process
 
 * Create a Python script that analyzes the votes and calculates each of the following:
 
@@ -47,3 +56,8 @@ Creatw a Python script for analyzing the financial records of the company. Expor
 * In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
 # Datasets
+[budget_data.csv](PyBank/Resources/budget_data.csv). 
+The dataset is composed of two columns: `Date` and `Profit/Losses`. 
+
+[election_data.csv](PyPoll/Resources/election_data.csv). 
+The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`.
