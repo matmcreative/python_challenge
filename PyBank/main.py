@@ -2,9 +2,9 @@
 import os
 import csv
 # path to .csv input file
-pybank_csv = os.path.join("/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyBank/Resources/budget_data.csv")
+pybank_csv = os.path.join("PyBank/Resources/budget_data.csv")
 # path to .txt output file
-output_txt = os.path.join('/Users/lisareedpreston/Documents/VanderbiltBootcamp/Homework/python_challenge/PyBank/Resources/output.txt')
+output_txt = os.path.join('PyBank/Resources/output.txt')
 # test path to .csv input
 #print(pybank_csv)
 
@@ -65,17 +65,3 @@ print("Total : $", sum(profit_loss))
 print("Average Change: $",round(average_change))
 print("Greatest Increase :" + greatest_increase_date + " $" + str(greatest_increase))
 print("Greatest Decrease :" + greatest_decrease_date + " $" + str(greatest_decrease))
-
-# * As an example, your analysis should look similar to the one below:
-
-#   ```text
-#   Financial Analysis
-#   ----------------------------
-#   Total Months: 86
-#   Total: $38382578
-#   Average  Change: $-2315.12
-#   Greatest Increase in Profits: Feb-2012 ($1926159)
-#   Greatest Decrease in Profits: Sep-2013 ($-2196167)
-#   ```
-
-# * In addition, your final script should both print the analysis to the terminal and export a text file with the results.
