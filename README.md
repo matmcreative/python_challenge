@@ -1,8 +1,5 @@
 # PyBank and PyPoll | Python
 
-![Revenue](Images/revenue-per-lead.png)
-
-
 ## Table of Contents
 * [Technologies](#Technologies)
 * [PyBank Objective](#Objective1)
@@ -34,8 +31,6 @@ Create a Python script for analyzing the financial records of the company.
 * Print the analysis to the terminal and export a text file with the results.
 
 # Objective2 | PyPoll
-
-![Vote-Counting](Images/Vote_counting.png)
 
 * Modernize small-town vote-counting process. 
 
